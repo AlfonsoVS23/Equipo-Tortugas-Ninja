@@ -1,18 +1,23 @@
 import java.io.Console;
+import java.util.ArrayList;
+
 
 public class BucleWhile {
     public static void main(String[] args) {
         Console console = System.console();
         
+        
+
             System.out.println("-----------------");
             int repeticiones = Integer.parseInt(console.readLine("Ingrese en n° de notas a calcular: "));
             int contador = 0;
             System.out.println("-----------------");
             
             double sumacalif = 0;
+            
 
         while (repeticiones!=contador) {
-            double calif = Double.parseDouble(console.readLine("Ingrese su calificación: "));            
+            Double calif = Double.parseDouble(console.readLine("Ingrese su calificación: "));            
             if(calif>=0 && calif<=3){
                 System.out.println("-----------------");
                 System.out.println("No logrado");
@@ -44,13 +49,18 @@ public class BucleWhile {
             System.out.println("-----------------");
             System.out.println("Su acumulado es: " + sumacalif);
             System.out.println("-----------------");
+
         }
         System.out.println("-----------------");
         double promedio = (sumacalif/repeticiones);
         System.out.println("Su promedio es: " + promedio);
         System.out.println("-----------------");
+
+
+
+
+            }
     }
-}
 
         //********Opcion con contador******** */
         /* int contador = 0;
